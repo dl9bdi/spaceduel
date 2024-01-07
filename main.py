@@ -72,7 +72,7 @@ while game_is_on:
         if ship1.distance(ship2) < 20:
             # game_is_on = False
             print("Crash")
-            winsound.Beep(440,300)
+            winsound.Beep(440, 300)
             explode(ship1)
             ship1.hideturtle()
             ship2.hideturtle()
@@ -85,7 +85,7 @@ while game_is_on:
         if (ship1.ship_bullet.bullet_runs == True) and (ship1.ship_bullet.distance(ship2) < 30):
             # game_is_on = False
             print("Hit by ship1")
-            winsound.Beep(1000,300)
+            winsound.Beep(1000, 300)
 
             explode(ship2)
             scoreboard.player2_remaining_ships -= 1
@@ -96,7 +96,7 @@ while game_is_on:
         if (ship2.ship_bullet.bullet_runs == True) and (ship2.ship_bullet.distance(ship1) < 30):
             # game_is_on = False
             print("Hit by ship 2")
-            winsound.Beep(2000,300)
+            winsound.Beep(2000, 300)
 
             explode(ship1)
             scoreboard.player1_remaining_ships -= 1
